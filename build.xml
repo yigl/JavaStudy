@@ -1,0 +1,5 @@
+<project name="sampleBuild" default="compile" basedir=".">
+  <target name="compile" description="Compile java files">
+    <javac srcdir="src" destdir="bin" />
+  </target>
+</project>
