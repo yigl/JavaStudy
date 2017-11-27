@@ -1,19 +1,45 @@
-<project name="sampleBuild" default="compile" basedir=".">
-  <taskdef resource="com/puppycrawl/tools/checkstyle/ant/checkstyle-ant-task.properties"
-    classpath="lib/checkstyle-8.5-all.jar"/>
-  <path id="compile.classpath">
-    <fileset dir="lib/">
-      <include name="*.jar"/>
-    </fileset>
-  </path>
-  <target name="compile" description="Compile java files">
-    <javac srcdir="src" destdir="bin" />
-      <classpath refid="compile.classpth"/>
-  </target>
-  <target name="checkstyle">
-    <checkstyle config="sun_checks.xml">
-      <fileset dir="src/corleone/basic" includes="**/*.java"/>
-      <formatter type="xml" toFile="checkstyle_errors.xml"/>
-    </checkstyle>
-  </target>
+<project name = "TestNGTest" default = "test" basedir = ".">
+
+   <!-- Define <testng> task -->
+
+   <taskdef name = "testng" classname = "org.testng.TestNGAntTask">
+      <classpath>
+         <pathelement location = "lib/testng-6.8.jar"/>
+      </classpath>
+   </taskdef>
+
+   <property name = "classdir" location = "bin" />
+   <property name = "srcdir" location = "src" />
+   <property name = "libdir" location = "lib" />
+   <property name = "xmldir" location = "xml" />
+   <property name = "full-compile" value="true" />
+
+   <path id = "classpath.base"/>
+   <path id = "classpath.test">
+     <fileset dir = "${libdir}">
+       <include name = "**/*.jar" />
+     </fileset>
+  <!--   <pathelement location = "${classdir}" /> -->
+     <pathelement location = "${srcdir}" />
+  <!--   <path refid = "classpath.base" />  -->
+   </path>
+
+   <target name = "clean" >
+      <delete verbose="${full-compile}">
+         <fileset dir = "${classdir}" includes="**/*.class" />
+      </delete>
+   </target>
+
+   <target name = "compile" depends="clean">
+      <javac srcdir = "${srcdir}" destdir = "${classdir}" verbose="${full-compile}">
+         <classpath refid = "classpath.test"/>
+      </javac>
+   </target>
+
+   <target name = "test" depends="compile">
+      <testng outputdir = "${classdir}" classpathref="classpath.test">
+         <xmlfileset dir = "${xmldir}" includes="testng.xml"/>
+      </testng>
+   </target>
+
 </project>
