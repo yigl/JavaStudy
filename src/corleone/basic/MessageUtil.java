@@ -1,23 +1,35 @@
 package corleone.basic;
-import java.lang.*;
+
+/**.
+ * MessageUtil
+ */
 public class MessageUtil {
 
-	private String message;
-	
+    private String message;
+
+	/**.
+	 * TODO Auto-generated constructor stub
+	 */
 	public MessageUtil() {
-		// TODO Auto-generated constructor stub
+
 	}
 
-    //Constructor
-	//@param message to be printed
-	public MessageUtil(String message){
-	      this.message = message;
+	/**
+	 * Constructor
+	 * 
+	 * @param message
+	 *            to be printed
+	 */
+	public MessageUtil(String message) {
+		this.message = message;
 	}
 
-	// prints the message
-	public String printMessage(){
-	    System.out.println(message);
-	    return message;
+	/**
+	 * prints the message
+	 */
+	public String printMessage() {
+		System.out.println(message);
+		return message;
 	}
 
 }

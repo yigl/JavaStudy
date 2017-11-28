@@ -1,7 +1,8 @@
 <project name = "TestNGTest" default = "test" basedir = ".">
 
    <!-- Define <testng> task -->
-
+   <taskdef resource="com/puppycrawl/tools/checkstyle/ant/checkstyle-ant-task.properties"
+     classpath="lib/checkstyle-8.5-all.jar"/>
    <taskdef name = "testng" classname = "org.testng.TestNGAntTask">
       <classpath>
          <pathelement location = "lib/testng-6.8.jar"/>
@@ -17,7 +18,7 @@
    <path id = "classpath.base"/>
    <path id = "classpath.test">
      <fileset dir = "${libdir}">
-       <include name = "**/*.jar" />
+       <include name = "*.jar" />
      </fileset>
   <!--   <pathelement location = "${classdir}" /> -->
      <pathelement location = "${srcdir}" />
@@ -40,6 +41,13 @@
       <testng outputdir = "${classdir}" classpathref="classpath.test">
          <xmlfileset dir = "${xmldir}" includes="testng.xml"/>
       </testng>
+   </target>
+
+   <target name="checkstyle">
+     <checkstyle config="xml/sun_checks.xml">
+       <fileset dir="src/corleone/basic" includes="**/*.java"/>
+       <formatter type="xml" toFile="checkstyle_errors.xml"/>
+     </checkstyle>
    </target>
 
 </project>

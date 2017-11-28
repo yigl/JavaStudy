@@ -11,7 +11,7 @@
       <classpath refid="compile.classpth"/>
   </target>
   <target name="checkstyle">
-    <checkstyle config="sun_checks.xml">
+    <checkstyle config="xml/sun_checks.xml">
       <fileset dir="src/corleone/basic" includes="**/*.java"/>
       <formatter type="xml" toFile="checkstyle_errors.xml"/>
     </checkstyle>
