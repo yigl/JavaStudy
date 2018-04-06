@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BasicFunctionSuite" parallel="false">
+    <test name="TestClass" preserve-order="true">
+        <classes>
+            <class name="corleone.test.TestClass">
+                <methods>
+                    <exclude name="testSuperClass"/>
+                    <exclude name="testAnonymousClass"/>
+                    <exclude name="testNonStaticInnerClass"/>
+                    <exclude name="testStaticInnerClass"/> 
+                </methods>
+            </class>     
+        </classes>
+    </test> 
+     <test name="TestBasicFunction">
+        <classes>
+            <class name="corleone.test.TestBasicFunction">
+                <methods>
+                    <exclude name="processVMArguments"/>
+                    <exclude name="processDateTimes"/>
+                </methods>
+            </class>     
+        </classes>
+    </test> 
+    <test name="TestCollections">
+        <classes>
+            <class name="corleone.test.TestCollections">
+                <methods>
+                    <exclude name="traverseTreeMap"/>
+                </methods>
+            </class>     
+        </classes>
+    </test> 
+    <test name="TestString">
+        <classes>
+            <class name="corleone.test.TestString">
+                <methods>
+                    <include name="testStringBuiler"/>
+                </methods>
+            </class>     
+        </classes>
+    </test> 
+     <test name="TestJAXB">
+        <classes>
+            <class name="corleone.test.TestXML">
+                <methods>
+                    <exclude name="unmarshalling"/>
+                </methods>
+            </class>     
+        </classes>
+    </test>  
+</suite> 

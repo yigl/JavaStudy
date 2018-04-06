@@ -1,0 +1,76 @@
+<statistics end="2018-03-09 13:31:50.227981" start="2018-03-09 13:31:34.129392">
+  <traffic name="arp">
+    <target name="169.254.110.3">
+      <counter name="received">736</counter>
+      <counter name="sent">736</counter>
+    </target>
+    <target name="169.254.110.4">
+      <counter name="received">736</counter>
+      <counter name="sent">736</counter>
+    </target>
+  </traffic>
+  <traffic name="ndns">
+    <target name="2003:55aa:1c:1::4">
+      <counter name="received">1224</counter>
+      <counter name="sent">1224</counter>
+    </target>
+    <target name="2003:55aa:1c:1::3">
+      <counter name="received">1223</counter>
+      <counter name="sent">1223</counter>
+    </target>
+  </traffic>
+  <traffic name="ndna">
+    <target name="2003:55aa:1c:1::4">
+      <counter name="sent">1222</counter>
+    </target>
+    <target name="2003:55aa:1c:1::3">
+      <counter name="sent">1222</counter>
+    </target>
+  </traffic>
+  <traffic name="snmp">
+    <target name="169.254.15.1">
+      <counters name="1.3.6.1.4.1.193.177.2.2.8.2.5.1">
+        <counter name="received">1</counter>
+        <counter name="spent">11.993144989</counter>
+        <counter name="sent">1</counter>
+      </counters>
+    </target>
+  </traffic>
+  <traffic name="bgci::udp">
+    <target name="169.254.15.1">
+      <counters name="voe">
+        <counter name="received">30</counter>
+        <counter name="spent">0.279685735703</counter>
+        <counter name="sent">30</counter>
+      </counters>
+      <counters name="vlan">
+        <counter name="received">29</counter>
+        <counter name="spent">0.0832810401917</counter>
+        <counter name="sent">29</counter>
+      </counters>
+      <counters name="bld:pwr">
+        <counter name="received">30</counter>
+        <counter name="spent">0.27188372612</counter>
+        <counter name="sent">30</counter>
+      </counters>
+    </target>
+  </traffic>
+  <traffic name="icmp">
+    <target name="169.254.110.21">
+      <counter name="received">18</counter>
+      <counter name="sent">18</counter>
+    </target>
+    <target name="169.254.110.3">
+      <counter name="received">963</counter>
+      <counter name="sent">963</counter>
+    </target>
+    <target name="169.254.110.22">
+      <counter name="received">17</counter>
+      <counter name="sent">17</counter>
+    </target>
+    <target name="169.254.110.4">
+      <counter name="received">963</counter>
+      <counter name="sent">963</counter>
+    </target>
+  </traffic>
+</statistics>

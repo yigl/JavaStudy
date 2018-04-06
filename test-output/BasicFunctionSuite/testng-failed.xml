@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [BasicFunctionSuite]">
+  <test name="TestClass(failed)">
+    <classes>
+      <class name="corleone.test.TestClass">
+        <methods>
+          <include name="testNonStaticInnerClass"/>
+          <include name="cleanTestCase"/>
+          <include name="setUp"/>
+          <include name="initTestCase"/>
+        </methods>
+      </class> <!-- corleone.test.TestClass -->
+    </classes>
+  </test> <!-- TestClass(failed) -->
+</suite> <!-- Failed suite [BasicFunctionSuite] -->

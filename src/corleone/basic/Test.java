@@ -1,53 +1,36 @@
 package corleone.basic;
+import java.time.Period;
 import java.util.*;
-import java.lang.*;
 
 public class Test {
-
+	
+	/**
+    *    The difference between program arguments and VM arguments:
+    *    1. Program arguments are arguments that are passed to your application, which are accessible via the "args" String array parameter
+    *  of your main method. 
+    *    2. VM arguments are arguments such as System properties that are passed to the Java interpreter(ie,'java'), which is called before Java class
+	*
+	*    The way to run manually in command line: 
+	*    1) First cd to work directory: /home/eguolyi/Development/Java
+	*    2) compile all java file into .class file (javac -d bin/ src/corleone/basic/*.java -cp /home/eguolyi/.p2/pool/plugins/org.testng_6.13.1.r201712040515.jar)
+	*    3) The -d above means put the compile output will be put under ./bin/
+	*    4) Note that ./bin/corleone/basic directory for class files will be created automatically for package "corleone.basic".
+	*    5) Run: [Development/Java-space/bin]$ java -DsysProp1=sp1 -DsysProp2=sp2 corleone.basic.Test p1 p2 p3
+    */
 	public static void main(String[] args) {
    
-	    Function_study myStudy = new Function_study();
-	    myStudy.argumentsTest(args);
-	    
-		// TODO Auto-generated method stub
-	    String router$view = "router$view";
-	    Sub_class obj = new Sub_class();
-	    obj.my_method();
-	    System.out.println("variable router$view = " + router$view);
+		System.out.println("test program arguments");
+		System.out.println("---------------------------");
+	    Function_Study myStudy = new Function_Study();
+	    myStudy.commandLineArguments(args);
+	       
+	    // Arrays
+	  /*  myStudy.arrayStudy();
 
-	    //About HashMap
-	    //HashMap nameAge = new HashMap();
-	    TreeMap<String, Integer> nameAge = new TreeMap<String, Integer>();
-	    nameAge.put("Lars", 42);
-	    nameAge.put("sara", 16);
-	    nameAge.put("Tomas", 36);
-	    nameAge.put("Martin", 27);
-	    nameAge.put("Bo", 27);
-	    nameAge.put("Hanna", 27);
-	    nameAge.put("Jan", 27);
-	    nameAge.put("Pelle", 27);
+	    Period p = Period.parse("P1Y");
+	    System.out.println(p.getMonths());*/
+	   
 	    
-	    Set set = nameAge.entrySet();
-	    Iterator m = set.iterator();
-	    int sumAge = 0;
-	    while(m.hasNext()) {
-	        Map.Entry me = (Map.Entry)m.next();
-	        sumAge = sumAge + (Integer)me.getValue();
-	    }
-	    
-	    System.out.println("\nThe name-value is:");
-	    System.out.print(nameAge);
-	    System.out.println("\nThe average age is:" + sumAge/nameAge.size());
-	    System.out.print("Those people are old thant 25 are: ");
-	    m = set.iterator();
-	    while(m.hasNext()) {
-	        Map.Entry me = (Map.Entry)m.next();
-	        if ((Integer)me.getValue() > 25) 
-                System.out.print(me.getKey() + ", ");
-        }
-	    
-	    Collection b = nameAge.values();
-	    System.out.print("Value List:"+ b);
 	    
     }
 }
