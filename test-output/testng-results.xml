@@ -1,47 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="8" total="10" passed="2">
+<testng-results skipped="0" failed="0" ignored="5" total="8" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="BasicFunctionSuite" duration-ms="73" started-at="2018-03-16T16:01:49Z" finished-at="2018-03-16T16:01:49Z">
+  <suite name="BasicFunctionSuite" duration-ms="201" started-at="2019-03-10T22:13:57Z" finished-at="2019-03-10T22:13:57Z">
     <groups>
     </groups>
-    <test name="TestClass" duration-ms="7" started-at="2018-03-16T16:01:49Z" finished-at="2018-03-16T16:01:49Z">
+    <test name="TestClass" duration-ms="4" started-at="2019-03-10T22:13:57Z" finished-at="2019-03-10T22:13:57Z">
     </test> <!-- TestClass -->
-    <test name="TestBasicFunction" duration-ms="1" started-at="2018-03-16T16:01:49Z" finished-at="2018-03-16T16:01:49Z">
-    </test> <!-- TestBasicFunction -->
-    <test name="TestCollections" duration-ms="1" started-at="2018-03-16T16:01:49Z" finished-at="2018-03-16T16:01:49Z">
-    </test> <!-- TestCollections -->
-    <test name="TestString" duration-ms="21" started-at="2018-03-16T16:01:49Z" finished-at="2018-03-16T16:01:49Z">
-      <class name="corleone.test.TestString">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:corleone.test.TestString@66a3ffec]" name="setUp" is-config="true" duration-ms="0" started-at="2018-03-16T17:01:49Z" finished-at="2018-03-16T17:01:49Z">
+    <test name="TestBasicFunction" duration-ms="138" started-at="2019-03-10T22:13:57Z" finished-at="2019-03-10T22:13:57Z">
+      <class name="corleone.test.TestBasicFunction">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:corleone.test.TestBasicFunction@5e5792a0]" name="beforeClass" is-config="true" duration-ms="17" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BasicFunction]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:corleone.test.TestBasicFunction@5e5792a0]" name="setUp" is-config="true" duration-ms="1" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[VM agrements]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testStringBuiler()[pri:0, instance:corleone.test.TestString@66a3ffec]" name="testStringBuiler" duration-ms="6" started-at="2018-03-16T17:01:49Z" finished-at="2018-03-16T17:01:49Z">
+        <test-method status="PASS" signature="processVMArguments()[pri:0, instance:corleone.test.TestBasicFunction@5e5792a0]" name="processVMArguments" duration-ms="6" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testStringBuiler -->
-      </class> <!-- corleone.test.TestString -->
-    </test> <!-- TestString -->
-    <test name="TestJAXB" duration-ms="4" started-at="2018-03-16T16:01:49Z" finished-at="2018-03-16T16:01:49Z">
-      <class name="corleone.test.TestXML">
-        <test-method status="PASS" signature="initTestCase()[pri:0, instance:corleone.test.TestXML@91161c7]" name="initTestCase" is-config="true" duration-ms="10" started-at="2018-03-16T17:01:49Z" finished-at="2018-03-16T17:01:49Z">
+        </test-method> <!-- processVMArguments -->
+        <test-method status="PASS" signature="tearDown(java.lang.String)[pri:0, instance:corleone.test.TestBasicFunction@5e5792a0]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[VM agrements]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="processDateTimes()[pri:0, instance:corleone.test.TestBasicFunction@5e5792a0]" name="processDateTimes" duration-ms="81" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- processDateTimes -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:corleone.test.TestBasicFunction@5e5792a0]" name="setUp" is-config="true" duration-ms="0" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DateTimes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.String)[pri:0, instance:corleone.test.TestBasicFunction@5e5792a0]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DateTimes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:corleone.test.TestBasicFunction@5e5792a0]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- corleone.test.TestBasicFunction -->
+    </test> <!-- TestBasicFunction -->
+    <test name="TestCollections" duration-ms="0" started-at="2019-03-10T22:13:57Z" finished-at="2019-03-10T22:13:57Z">
+    </test> <!-- TestCollections -->
+    <test name="TestString" duration-ms="13" started-at="2019-03-10T22:13:57Z" finished-at="2019-03-10T22:13:57Z">
+      <class name="corleone.test.TestString">
+        <test-method status="PASS" signature="initTestCase()[pri:0, instance:corleone.test.TestString@5c3bd550]" name="initTestCase" is-config="true" duration-ms="11" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTestCase -->
-        <test-method status="PASS" signature="marshalling()[pri:0, instance:corleone.test.TestXML@91161c7]" name="marshalling" duration-ms="1" started-at="2018-03-16T17:01:49Z" finished-at="2018-03-16T17:01:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- marshalling -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:corleone.test.TestXML@91161c7]" name="setUp" is-config="true" duration-ms="0" started-at="2018-03-16T17:01:49Z" finished-at="2018-03-16T17:01:49Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:corleone.test.TestString@5c3bd550]" name="setUp" is-config="true" duration-ms="1" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[StringBuild]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="cleanTestCase()[pri:0, instance:corleone.test.TestXML@91161c7]" name="cleanTestCase" is-config="true" duration-ms="1" started-at="2018-03-16T17:01:49Z" finished-at="2018-03-16T17:01:49Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:corleone.test.TestString@5c3bd550]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[String]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testStringBuiler()[pri:0, instance:corleone.test.TestString@5c3bd550]" name="testStringBuiler" duration-ms="1" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStringBuiler -->
+        <test-method status="PASS" signature="tearDown(java.lang.String)[pri:0, instance:corleone.test.TestString@5c3bd550]" name="tearDown" is-config="true" duration-ms="7" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[StringBuild]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:corleone.test.TestString@5c3bd550]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="cleanTestCase()[pri:0, instance:corleone.test.TestString@5c3bd550]" name="cleanTestCase" is-config="true" duration-ms="0" started-at="2019-03-10T23:13:57Z" finished-at="2019-03-10T23:13:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanTestCase -->
-      </class> <!-- corleone.test.TestXML -->
-    </test> <!-- TestJAXB -->
+      </class> <!-- corleone.test.TestString -->
+    </test> <!-- TestString -->
   </suite> <!-- BasicFunctionSuite -->
 </testng-results>

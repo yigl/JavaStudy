@@ -13,7 +13,7 @@ public class Test {
 	*    The way to run manually in command line: 
 	*    1) First cd to work directory: /home/eguolyi/Development/Java
 	*    2) compile all java file into .class file (javac -d bin/ src/corleone/basic/*.java -cp /home/eguolyi/.p2/pool/plugins/org.testng_6.13.1.r201712040515.jar)
-	*    3) The -d above means put the compile output will be put under ./bin/
+	*    3) The -d above means put the compile output will be put under ./bin/. The -cp set the classpath
 	*    4) Note that ./bin/corleone/basic directory for class files will be created automatically for package "corleone.basic".
 	*    5) Run: [Development/Java-space/bin]$ java -DsysProp1=sp1 -DsysProp2=sp2 corleone.basic.Test p1 p2 p3
     */

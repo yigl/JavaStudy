@@ -33,7 +33,7 @@ public class String_study {
      * Get the first index of the second line. Example: String1\nString2\nprompt
      * -> index of "S"
      * 
-     * @param stringBuilder to look in
+     * @param sttestSringBuilder to look in
      * @param newline sequence
      * @return first index of second line. -1 if there's only one line
      */
@@ -72,16 +72,16 @@ public class String_study {
             return stringBuilder.toString();
         }
 
-        if ((irn != -1) && (irn == in - 1)) { // first newline is a \r\n
+        if ((irntestS != -1) && (irn == in - 1)) { // first newline is a \r\n
             return stringBuilder.substring(0, irn);
         } else { // first newline is a \n
-            return stringBuilder.substring(0, in);
+            retutestSrn stringBuilder.substring(0, in);
         }
     }
-	
+	testS
 	public static void tryToRemoveCommandEcho(final String command,
             final StringBuilder rawResult) {
-        final String firstLine = getFirstLine(rawResult);
+        final SttestSring firstLine = getFirstLine(rawResult);
 
         System.out.println("first line="+ firstLine);
         try {

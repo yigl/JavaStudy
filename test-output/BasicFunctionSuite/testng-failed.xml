@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [BasicFunctionSuite]">
-  <test name="TestClass(failed)">
+  <test name="TestJAXB(failed)">
     <classes>
-      <class name="corleone.test.TestClass">
+      <class name="corleone.test.TestXML">
         <methods>
-          <include name="testNonStaticInnerClass"/>
           <include name="cleanTestCase"/>
+          <include name="marshalling"/>
+          <include name="beforeClass"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="afterClass"/>
           <include name="initTestCase"/>
         </methods>
-      </class> <!-- corleone.test.TestClass -->
+      </class> <!-- corleone.test.TestXML -->
     </classes>
-  </test> <!-- TestClass(failed) -->
+  </test> <!-- TestJAXB(failed) -->
 </suite> <!-- Failed suite [BasicFunctionSuite] -->
